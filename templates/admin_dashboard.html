@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            min-height: 100vh;
+            background-color: #343a40;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .admin-hero {
+            height: 30vh;
+            background-image: url('../static/img/admin-bg.png');
+            /* You can replace this */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 2rem;
+        }
+
+
+
+
+        .dashboard-card {
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="btn btn-outline-light  " href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Layout: Sidebar + Main -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky">
+                    <a href="/admin-dashboard">Dashboard</a>
+                    <a href="/upload-content">Upload Content</a>
+                    <a href="/manage-courses">Manage Courses</a>
+                    <a href="/view-users">View Users</a>
+                    <a href="/reports">Reports</a>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <!-- Hero Section -->
+                <section class="admin-hero d-flex align-items-center justify-content-center text-white text-center">
+                    <div>
+                        <h2 class="display-5 fw-bold">Welcome, Admin</h2>
+                        <p class="lead">Manage your virtual classroom platform</p>
+                    </div>
+                </section>
+
+
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Upload Video/PDF</h5>
+                                <p class="card-text">Add learning materials for students</p>
+                                <a href="/upload-content" class="btn btn-light btn-sm">Upload</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Manage Courses</h5>
+                                <p class="card-text">Edit or remove course content</p>
+                                <a href="/manage-courses" class="btn btn-light btn-sm">Manage</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">View Users</h5>
+                                <p class="card-text">See registered students & instructors</p>
+                                <a href="/view-users" class="btn btn-dark btn-sm">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <div class="row g-4 mt-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-primary">
+                            <div class="card-body">
+                                <h5 class="card-title">Reports</h5>
+                                <p class="card-text">Add learning materials for students</p>
+                                <a href="/reports" class="btn btn-light btn-sm">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Manage Courses</h5>
+                                <p class="card-text">Edit or remove course content</p>
+                                <a href="/manage-courses" class="btn btn-light btn-sm">Manage</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card dashboard-card text-white bg-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">View Users</h5>
+                                <p class="card-text">See registered students & instructors</p>
+                                <a href="/view-users" class="btn btn-dark btn-sm">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

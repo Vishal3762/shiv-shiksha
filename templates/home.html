@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Home - Virtual Classroom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Inside your <head> tag -->
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <!-- Logo Image -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="ShivShiksha Logo" height="70px" class="me-2">
+      <!-- <span class="d-none d-md-inline">ShivShiksha</span>  -->
+    </a>
+    
+    <!-- Login/Register Buttons -->
+    <div class="ms-auto">
+      <a href="/login" class="btn btn-outline-primary me-2">Login</a>
+      <a href="/register" class="btn btn-primary">Register</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero-section text-white py-5" style="background: url('../static/img/Vector\ 1.png') no-repeat center center/cover;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column: Text -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h1 class="display-4 fw-bold">Welcome to Virtual Classroom</h1>
+        <p class="lead">Learn anytime, anywhere with modern tools and resources</p>
+        <a href="/register" class="btn btn-light btn-lg mt-3">Get Started</a>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-md-6 text-center">
+        <img src="../static/img/baner-img1.png" alt="Learning Illustration" class="img-fluid" style="max-height: 500px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- about us -->
+
+<section class="about-section py-3">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image -->
+      <div class="col-lg-5">
+        <img src="{{ url_for('static', filename='img/baner-img.png') }}" alt="ShivShiksha Learning"
+          class="img-fluid" style="max-width: 100%;">
+      </div>
+      
+      <!-- Text -->
+      <div class="col-lg-7">
+        <h2 class="about-heading">
+          Why <span class="labskill-highlight">ShivShiksha</span> is the Better Choice?
+        </h2>
+        <p class="about-text">
+          ShivShiksha empowers students with 100% free online learning, expert-designed resources, and real-world
+          guidance. Unlike generic learning platforms, ShivShiksha is built specifically for students in regional and rural areas,
+          providing education that’s accessible, effective, and inclusive.With easy-to-understand lessons, practical tools, and supportive mentors, we prepare students not just to pass exams, but
+          to thrive in life. Learn anytime, anywhere — with ShivShiksha.
+        </p>
+     
+          
+      
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>

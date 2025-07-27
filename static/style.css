@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 550px;
+}
+
+.admin-hero {
+    height: 30vh;
+    background-image: url('../static/img/admin-bg.png');
+    /* You can replace this */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+
+/* about us section */
+.about-section {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-label span {
+    display: inline-block;
+    padding: 4px 12px;
+
+    color: #111111;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: transparent;
+    /* no background */
+}
+
+.about-heading {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0%;
+    color: #535967;
+
+}
+
+.labskill-highlight {
+    font-weight: 700;
+    background: linear-gradient(90deg, #069DAA 0%, #003366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #535967;
+
+}
+
+@media (max-width: 991.98px) {
+    .about-heading {
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .about-text {
+        text-align: left;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .about-label {
+        text-align: center;
+    }
+}
