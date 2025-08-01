@@ -74,7 +74,7 @@
                     <a href="/admin-dashboard">Dashboard</a>
                     <a href="/upload-content">Upload Content</a>
                     <a href="/manage-courses">Manage Courses</a>
-                    <a href="/view-users">View Users</a>
+                    <a href="/view-Student">View Student</a>
                     <a href="/reports">Reports</a>
                 </div>
             </nav>
@@ -84,7 +84,7 @@
                 <!-- Hero Section -->
                 <section class="admin-hero d-flex align-items-center justify-content-center text-white text-center">
                     <div>
-                        <h2 class="display-5 fw-bold">Welcome, Admin</h2>
+                        <h2 class="display-5 fw-bold">Welcome, {{ session['username'] }} 👋</h2>
                         <p class="lead">Manage your virtual classroom platform</p>
                     </div>
                 </section>
@@ -112,16 +112,16 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="card dashboard-card text-white bg-warning">
                             <div class="card-body">
-                                <h5 class="card-title">View Users</h5>
+                                <h5 class="card-title">View Student</h5>
                                 <p class="card-text">See registered students & instructors</p>
-                                <a href="/view-users" class="btn btn-dark btn-sm">View</a>
+                                <a href="/view_student" class="btn btn-dark btn-sm">View</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                 <div class="row g-4 mt-4">
+                <div class="row g-4 mt-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="card dashboard-card text-white bg-primary">
                             <div class="card-body">
